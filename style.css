@@ -12,10 +12,6 @@ nav{
     margin: auto;
     background: var(--bg);
 }
-nav > ul{  
-     position: relative; 
-     display: flex;
-}
 nav ul li a{ 
     display:block;
     text-decoration: none;
@@ -26,8 +22,9 @@ nav ul li a:hover{
     background:#f00; 
     color:var(--clor);
 }
-nav > ul > li > ul li{ 
-    position:relative;
+nav > ul{  
+    position: relative; 
+    display: flex;
 }
 nav > ul > li > ul{ 
     display:none; 
@@ -36,6 +33,9 @@ nav > ul > li > ul{
 }
 nav > ul > li:hover > ul{ 
     display:block;
+}
+nav > ul > li > ul > li{ 
+    position:relative;
 }
 nav > ul > li > ul > li > ul{ 
     display:none; 
